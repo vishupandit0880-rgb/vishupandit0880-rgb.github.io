@@ -145,18 +145,57 @@
 <section class="section reveal" id="contact">
   <div class="eyebrow">✉ &nbsp; DIRECT RECRUITER INQUIRY</div>
   <h2>Contact Vishnu</h2>
-  <form id="contactForm" onsubmit="contactMe(event)">
-    <label>FULL NAME *</label>
-    <input id="cname" required placeholder="Your Name or Recruiter Title">
-    <label>WORK EMAIL *</label>
-    <input id="cemail" type="email" required placeholder="name@company.com">
-    <label>COMPANY / ORGANIZATION</label>
-    <input id="ccompany" placeholder="Company Name">
-    <label>MESSAGE / INQUIRY *</label>
-    <textarea id="cmsg" required placeholder="Write your message..."></textarea>
-    <button class="btn primary" type="submit">Send Message <span>→</span></button>
-    <div id="formStatus" class="form-status" aria-live="polite"></div>
-  </form>
+  <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+
+  <input type="hidden"
+         name="access_key"
+         value="e176716e-ca54-4d08-b333-2d8b89aa84da">
+
+  <input type="hidden"
+         name="subject"
+         value="New Portfolio Inquiry - Vishnu Dutt Pandey">
+
+  <input type="hidden"
+         name="from_name"
+         value="Vishnu Dutt Pandey Portfolio">
+
+  <label>FULL NAME *</label>
+  <input
+    type="text"
+    name="name"
+    required
+    placeholder="Your Name or Recruiter Title"
+  >
+
+  <label>WORK EMAIL *</label>
+  <input
+    type="email"
+    name="email"
+    required
+    placeholder="name@company.com"
+  >
+
+  <label>COMPANY / ORGANIZATION</label>
+  <input
+    type="text"
+    name="company"
+    placeholder="Company Name"
+  >
+
+  <label>MESSAGE / INQUIRY *</label>
+  <textarea
+    name="message"
+    required
+    placeholder="Write your message..."
+  ></textarea>
+
+  <button class="btn primary" type="submit">
+    Send Message <span>→</span>
+  </button>
+
+  <div id="formStatus" class="form-status" aria-live="polite"></div>
+
+</form>
 </section>
 
 <section id="resume" class="resume-anchor"></section>
