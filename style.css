@@ -19,7 +19,8 @@ form label{display:block;margin:22px 0 9px;font-weight:700;color:#d7dce5}input,t
 @media(min-width:701px){.mobile-break{display:none}}
 
 /* PREMIUM POLISH */
-body{backgroundradial-gradient(circle at 15% 12%,rgba(0,202,255,.10),transparent 26%),
+body{background:
+radial-gradient(circle at 15% 12%,rgba(0,202,255,.10),transparent 26%),
 radial-gradient(circle at 85% 35%,rgba(124,83,255,.10),transparent 28%),
 linear-gradient(180deg,#020711 0%,#040913 55%,#020711 100%);
 background-attachment:fixed}
