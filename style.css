@@ -1782,3 +1782,54 @@ main {
   }
 
 }
+/* =========================================================
+   PROJECT BUTTON TEXT - CLEAR WHITE
+========================================================= */
+
+.project-card .btn,
+.project-card .btn:visited,
+.project-card .btn:hover,
+.project-card .btn:active {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+/* Live Demo */
+.project-card .btn.primary {
+  color: #ffffff !important;
+
+  background: linear-gradient(
+    135deg,
+    rgba(124, 58, 237, 0.90),
+    rgba(37, 99, 235, 0.80)
+  ) !important;
+
+  border: 1px solid rgba(255,255,255,0.35) !important;
+}
+
+/* GitHub */
+.project-card .btn:not(.primary) {
+  color: #ffffff !important;
+
+  background: rgba(0,0,0,0.35) !important;
+
+  border: 1px solid rgba(255,255,255,0.30) !important;
+}
+
+/* Hover */
+.project-card .btn.primary:hover {
+  color: #ffffff !important;
+
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #2563eb
+  ) !important;
+}
+
+.project-card .btn:not(.primary):hover {
+  color: #ffffff !important;
+
+  background: rgba(255,255,255,0.15) !important;
+  border-color: rgba(255,255,255,0.55) !important;
+}
